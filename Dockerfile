@@ -2,7 +2,7 @@ FROM golang:1.11.10-alpine3.9 as build
 
 WORKDIR /workdir
 
-RUN apk add --no-cache curl build-base git ca-certificates
+RUN apk add --no-cache curl build-base git ca-certificates docker
 
 COPY . /workdir
 
